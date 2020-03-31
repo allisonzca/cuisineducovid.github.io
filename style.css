@@ -1,7 +1,7 @@
 /* override default styling */
 body {
 	margin: 0px;
-	font-family: arcon, "The Brooklyn", helvetica;
+	font-family: "The Brooklyn", arcon, helvetica, sans-serif;
 	color: white;
 	background-color: black;
 }
@@ -14,6 +14,11 @@ body {
 @font-face {
   font-family: arcon;
   src: url(arcon_regular.otf);
+}
+
+@font-face {
+  font-family: "The Brooklyn";
+  src: url(the_brooklyn.otf);
 }
 
 p {
