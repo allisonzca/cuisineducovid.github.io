@@ -1,9 +1,19 @@
 /* override default styling */
 body {
 	margin: 0px;
-	font-family: "The Brooklyn", helvetica;
+	font-family: arcon, "The Brooklyn", helvetica;
 	color: white;
 	background-color: black;
+}
+
+@font-face {
+  font-family: disco;
+  src: url(disco.ttf);
+}
+
+@font-face {
+  font-family: arcon;
+  src: url(arcon_regular.otf);
 }
 
 p {
