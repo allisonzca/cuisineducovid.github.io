@@ -246,6 +246,13 @@ h1, h2, h3 {
 	padding: 0px;
 }
 
+.foodlist span {
+	display: block;
+	padding-bottom: 10px;
+	width: 60%;
+	margin: auto;
+}
+
 .experience {
 	width: 50%;
 	opacity: 100%;
