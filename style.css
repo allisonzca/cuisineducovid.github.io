@@ -1,0 +1,311 @@
+
+/* for wireframe */
+
+* {
+	/*
+	border: 1px solid black;
+	font-family: barlow;
+	*/
+}
+
+
+/* override default styling */
+body {
+	margin: 0px;
+	font-family: "The Brooklyn", helvetica;
+	color: white;
+	background-color: black;
+}
+
+p {
+	font-size: 13pt;
+	line-height: 16pt;
+}
+
+a {
+	text-decoration: none;
+	color: #ffd082;
+	transition: 0.3s ease;
+}
+
+a:hover {	
+	transition: 0.3s ease;
+	color: #ec9f53;
+}
+
+::selection {
+	background: #ec9f53;
+	color: white;
+}
+
+button {
+	background-color: #ec9f53;
+	mix-blend-mode: normal;
+	border: none;
+	padding: 10px;
+	font-family: "The Brooklyn";
+	font-size: 14pt;
+	color: black;
+	transition: 0.3s ease;
+}
+
+button:hover {
+	background-color: #ffd082;
+	transition: 0.3s ease;
+}
+
+button:active {
+	transition: 0.3s ease;
+	background-color: skyblue;
+}
+
+/* navigation bar stuff */
+
+span#logo img {
+	width: 100%;
+}
+
+nav {
+	position: sticky;
+	top: 0px;
+	background-color: black;
+	height: 70px;
+	display: flex;
+	font-family: disco, "The Brooklyn";
+	font-variant: small-caps;
+	padding: 10px 0px;
+}
+
+.links {
+	transform: translateY(-40px);
+	transition: 0.3s ease;
+}
+
+nav a {
+	color: white;
+	transition: 0.3s ease;
+}
+
+nav a:hover {
+	color: #efa154;
+	transition: 0.3s ease;
+}
+
+.minimized {
+	height: 50px;
+}
+
+#navlinks, footer ul {
+	padding: 0px;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+	width: 70%;
+}
+
+#navlinks li, footer li {
+	list-style-type: none;
+	display: inline-block;
+	width: 20%;
+}
+
+footer li {
+	width: 25%;
+}
+
+
+
+#logo, #rsvp {
+	display: block;
+}
+
+#logo {
+	transform: translateY(43px);
+}
+
+#navlinks li {
+	transform: translateY(-20px);
+}
+#rsvp {
+	position: relative;
+	transform: translateY(10px);
+}
+
+/* footer */
+
+footer {
+	height: 200px;
+	display: flex;
+	align-content: center;
+	background-color: gray;
+}
+
+/* index section blocks */
+
+.section, .course {
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+    min-height: 500px;
+    background-color: black;
+
+}
+
+#tagline {
+	width: 80%;
+	margin: auto;
+	color: white;
+	font-family: disco;
+	font-variant: small-caps;
+	letter-spacing: 10px;
+	font-weight: normal;
+	font-size: 60pt;
+}
+
+h1, h2, h3 {
+	font-family: disco, didot;
+	text-align: center;
+
+}
+
+#missionPreview, #bookingIndex {
+	width: 40%;
+	margin: 0% 30%;
+}
+
+.donateContainer {
+	width: 50%;
+	float: left;
+}
+
+.donateContainer h2, .donateContainer p {
+	width: 70%;
+	margin: auto;
+	padding: 10px;
+}
+
+.donateContainer p {
+	margin-bottom: 15px;
+}
+
+#donateSection {
+	width: 100%;
+}
+
+#siteCover {
+	background-image: url("images/massimiliano-grieco-Nnq38uYkuNU-unsplash.jpg"); 
+}
+
+#bookingCover {
+	background-color: black;
+	background-image: url("https://images.unsplash.com/photo-1568341667673-b192e43af3c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+	color: white;
+}
+
+#bookingIndex {
+	mix-blend-mode: difference;
+}
+
+/* menu blocks */
+
+.spacer {
+	height: 70px;
+}
+
+.pageDesc {
+	width: 55%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.course {
+	display: block;
+}
+
+.course h2 {
+	margin: 0px auto;
+	height: 10%;
+}
+
+.experience, .foodlist {
+	display: block;
+	float: left;
+	height: 80%;
+	margin: 0px;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.experience {
+	width: 50%;
+	opacity: 100%;
+}
+
+.expCover {
+	/*background-attachment: fixed;*/
+
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+	background-size: inherit;
+}
+
+.expDesc{
+	margin: 0px 0px;
+	width: 50%;
+	height: 100%;
+	transform: translate(50%, 25%);
+}
+
+.experience:hover .expCover{
+	opacity: 1;
+}
+
+.expDesc h3 {
+	margin: 0px auto;
+}
+
+.foodlist {
+	width: 50%;
+}
+
+.foodlist li {
+	margin-bottom: 30px;
+}
+
+#e1 {
+	background-image: url("images/mick-haupt-Hnq8p5ATajg-unsplash.jpg");
+	filter: grayscale(100%);
+	background-size: cover;
+}
+
+#e2 {
+	background-image: url("images/christian-lue-lYc-o9g962c-unsplash.jpg");
+	background-size: cover;
+	background-position: bottom right;
+
+}
+
+#e3 {
+	background-image: url("https://images.unsplash.com/photo-1541193751845-dd533e471f8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=609&q=80");
+	background-size: cover;
+}
+
+/* concept */
+
+#concept, #about {
+	width: 60%;
+	margin: auto;
+}
